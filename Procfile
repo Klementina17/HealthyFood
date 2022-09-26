@@ -1,0 +1,1 @@
+web: gunicorn HealthyFoodApp.wsgi --log-file
