@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+     <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+   <div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    <span class="linkovi">Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}"><span class="linkovi">PROFILE</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}"><span class="linkovi">ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}"><span class="linkovi">QUIZ</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borrow">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h3 class="mt-4">DINNER</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="mt-4">SPAGHETTI BOLOGNESE</h1>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/pate bolo-fi19608719.jpg' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+        <div class="col-5 mr-5">
+          <h3 class="my-3">SOUNDS DELICIOUS...</h3>
+          <p>
+            Everyone needs a basic spaghetti bolognese recipe that still tastes great, no matter how simple. Get that depth of flavour by cooking the sauce very gently until it’s super rich. This spag bol is designed to be a low cost recipe.
+
+            Each serving provides 787 kcal, 35g protein, 103g carbohydrates (of which 19g sugars), 24g fat (of which 8g saturates), 8.5g fibre and 1.5g salt.
+          </p>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 sostojki">
+          <h3 class="mt-3 text-capitalize">INGREDIENTS</h3>
+          <ul class="list-group ml-3">
+            <li>
+              <i class="fas fa-check-square"></i>
+              2 tbsp olive oil
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              400g/14oz beef mince
+            </li>
+            <li>
+                <i class="fas fa-check-square"></i>
+                1 onion, diced
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                2 garlic cloves, chopped
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                100g/3½oz carrot, grated
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                2 x 400g tin chopped tomatoes
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                400ml/14fl oz stock (made from stock cube. Ideally beef, but any will do)
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                400g/14oz dried spaghetti
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                salt and pepper
+              </li>
+
+          </ul>
+        </div>
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/Spag-bol-finished.jpg' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-3">
+            <div class="card bg-light_borrow">
+                <div class="card-body">
+                  <h5 class="card-title">STEP 1</h5>
+                  <p class="card-text">Heat a large saucepan over a medium heat. Add a tablespoon of olive oil and once hot add the beef mince and a pinch of salt and pepper. Cook the mince until well browned over a medium-high heat (be careful not to burn the mince. It just needs to be a dark brown colour). Once browned, transfer the mince to a bowl and set aside.</p>
+                </div>
+              </div>
+          </div>
+        <div class="col-3">
+            <div class="card bg-light_borrow">
+                <div class="card-body">
+                  <h5 class="card-title">STEP 2</h5>
+                  <p class="card-text">Add another tablespoon of oil to the saucepan you browned the mince in and turn the heat to medium. Add the onions and a pinch of salt and fry gently for 5-6 minutes, or until softened and translucent. Add the garlic and cook for another 2 minutes. Add the grated carrot then pour the mince and any juices in the bowl back into the saucepan.</p>
+                </div>
+              </div>
+          </div>
+        
+        <div class="col-3"><div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 3</h5>
+              <p class="card-text">Add the tomatoes to the pan and stir well to mix. Pour in the stock, bring to a simmer and then reduce the temperature to simmer gently for 45 minutes, or until the sauce is thick and rich. Taste and adjust the seasoning as necessary.</p>
+            </div>
+          </div></div>
+          <div class="col-3">
+            <div class="card bg-light_borrow">
+                <div class="card-body">
+                  <h5 class="card-title">STEP 4</h5>
+                  <p class="card-text">When ready to cook the spaghetti, heat a large saucepan of water and add a pinch of salt. Cook according to the packet instructions. Once the spaghetti is cooked through, drain and add to the pan with the bolognese sauce. Mix well and serve.</p>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12"><a href="{% url 'dinnerPage' %}" class="btn btn-rozevko back">BACK</a></div>
+      </div>
+   
+    </div>
+
+    <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>

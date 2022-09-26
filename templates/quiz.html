@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+ <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+  <div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    <span class="linkovi">Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}"><span class="linkovi">PROFILE</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}"><span class="linkovi">ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}"><span class="linkovi">QUIZ</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-img d-flex justify-content-center align-content-center">
+        <div class="row pomeri">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="box">
+                    <h4 class="mt-3 mx-3">HOW MANY MINUTES YOU SHOULD BAKE THE BREAD IN THE OVEN?</h4>
+                    <div class="radio-containerr">
+                        <input type="radio" id="correct1" name="bread">
+                        <label for="correct1" class="mr-5 mt-1 ml-1"><span class="minutes">4-6 Minutes</span></label>
+
+                        <input type="radio" id="2-3minutes" name="bread">
+                        <label for="2-3minutes" class="mr-5  mt-1 ml-1"><span class="minutes">2-3 Minutes</span></label>
+
+                        <input type="radio" id="5-7minutes" name="bread">
+                        <label for="5-7minutes"  class="mt-1 ml-1"><span class="minutes">5-7 Minutes</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <div class="box">
+                    <h4 class="mt-3 mx-3  text-uppercase">How much thickness is needed for chicken strips with walnuts?</h4>
+                    <div class="radio-container">
+                        <input type="radio" id="correct2" name="butter" class="ml-3">
+                        <label for="correct2" class="mr-5 mt-1 ml-1"><span class="minutes">2 tbsp chunky peanut butter (without palm oil or sugar)</span></label>
+
+                        <input type="radio" id="chunky" name="butter">
+                        <label for="chunky" class="mr-5  mt-1 ml-1"><span class="minutes">2 tbsp chunky peanut butter (with palm oil or sugar)</span></label>
+
+                        <input type="radio" id="ck" name="butter">
+                        <label for="ck"  class="mt-1 ml-1"><span class="minutes">4 tbsp chunky peanut butter</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <div class="box">
+                    <h4 class="mt-3 mx-3 text-uppercase">What is needed to make a strawberry brownies?</h4>
+                    <div class="radio-container">
+                        <input type="radio" id="correct3" name="chocholate">
+                        <label for="correct3" class="mr-5 mt-1 ml-1"><span class="minutes">chocolate, vanilla, strawberry</span></label>
+
+                        <input type="radio" id="orange" name="chocholate">
+                        <label for="orange" class="mr-5  mt-1 ml-1"><span class="minutes">chocolate, vanilla, orange</span></label>
+
+                        <input type="radio" id="melon" name="chocholate">
+                        <label for="melon"  class="mt-1 ml-1"><span class="minutes">chocolate, vanilla, melon</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <div class="boxx">
+                    <h4 class="mt-3 mx-3 text-uppercase">What kind of steaks, tenderloin or striple are needed for Steak & GRILL VEGETABLES?</h4>
+                    <div class="radio-container btm">
+                        <input type="radio" id="correct4" name="steaks" class="ml-3">
+                        <label for="correct4" class="mr-5 ml-1"><span class="minutes">2 quality steaks, tenderloin, striple or tenderloin (must be well aged to ensure tenderness)</span></label>
+
+                        <input type="radio" id="ste" name="steaks">
+                        <label for="ste" class="mr-5 ml-1"><span class="minutes">2 quality steaks, tenderloin, striple or tenderloin (doesn't have to be well aged to ensure tenderness)</span></label>
+
+                        <input type="radio" id="stek" name="steaks">
+                        <label for="stek"  class="ml-1"><span class="minutes">2 quality steaks, tenderloin, striple or tenderloin</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center my-5">
+                <div class="box">
+                    <h4 class="mt-3 mx-3 text-uppercase">How satisfied are you with this site?</h4>
+                    <div class="radio-containerr">
+                        <input type="radio" id="s" name="site">
+                        <label for="s" class="mr-5 mt-1"><span class="minutes">25-50%</span></label>
+
+                        <input type="radio" id="st" name="site">
+                        <label for="st" class="mr-5  mt-1"><span class="minutes">50-70%</span></label>
+
+                        <input type="radio" id="si" name="site">
+                        <label for="si"  class="mt-1"><span class="minutes">70-100%</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+      <div class="col-12"><a href="{% url 'certificatePage' %}" class="btn btn-rozevko zacuvaj">SUBMIT</a></div>
+    </div>
+
+      </div>
+      </div>
+
+    <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>

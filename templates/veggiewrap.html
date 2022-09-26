@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+     <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+   <div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    <span class="linkovi">Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}"><span class="linkovi">PROFILE</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}"><span class="linkovi">ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}"><span class="linkovi">QUIZ</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borrow">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h3 class="mt-4">LUNCH</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="mt-4">VEGGIE WRAP</h1>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/1402596449691.jpeg' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+        <div class="col-5 mr-5 d-flex align-items-center">
+          <p>
+            Vegetarian or not, you're going to want to make these wildly delicious Veggie Wraps. Crunchy, fresh veggies, spices and cheese are all wrapped into a flour tortilla. Our Veggie Wraps recipe is great for a last-minute lunch or lighter dinner. Personally, we love enjoying our Veggie Wraps outside on a nice day. If you're looking for additional ways to customize your vegetarian wraps, check out our Expert Tips section. You'll love this never-fail hit.
+          </p>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 sostojki">
+          <h3 class="mt-3 text-capitalize">INGREDIENTS</h3>
+          <ul class="list-group ml-3">
+            <li>
+              <i class="fas fa-check-square"></i>
+              4
+flour tortillas (10 inch)
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              4
+oz (half of 8-oz package) cream cheese, softened
+            </li>
+            <li>
+                <i class="fas fa-check-square"></i>
+                1
+                teaspoon ground cumin
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                1/2
+                teaspoon salt
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                4
+small leaves lettuce
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                1
+                medium red bell pepper, cut into thin strips
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                1
+cup sliced fresh mushrooms (3 oz)
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                1/2
+                medium cucumber, cut lengthwise into thin strips
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                4
+                medium green onions, chopped (1/4 cup)
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                2
+                oz pepper Jack cheese, shredded (1/2 cup)
+              </li>
+
+          </ul>
+        </div>
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/veg-wraps-recipe-07.jpg' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="col-12 sostojki">
+            <h3 class="d-flex ">STEPS</h3>
+            <ul class="list-group ml-3">
+              <li>
+                <i class="fas fa-check-square"></i>
+                Heat tortillas as directed on package. Meanwhile, in small bowl, mix cream cheese, cumin and salt until blended.
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                On each tortilla, spread 2 tablespoons cream cheese mixture. Layer remaining ingredients evenly over half of each tortilla. Tuck in sides of tortillas; roll up tightly to enclose filling.
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="col text-center">
+          <h3 class="text-uppercase">Tips from the Betty Crocker Kitchens</h3>
+            
+            <ul class="list-group-item mt-3">
+                <li class="mt-2">
+                    For great cracked pepper flavor, freshly grind pepper over your Veggie Wraps just before rolling up.
+                </li>
+                <li>Cooking Vegetarian? Always read labels to make sure each recipe ingredient is vegetarian. Products and ingredient sources can change.</li>
+                 <li>Not a fan of mushrooms? Try 1 cup thinly sliced Roma tomatoes instead in your vegetarian wraps.</li>
+                 <li>Thinly sliced pickled jalapeño or banana peppers make a pretty, flavorful garnish for these Veggie Wraps.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12"><a href="{% url 'lunchPage' %}" class="btn btn-rozevko back">BACK</a></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>

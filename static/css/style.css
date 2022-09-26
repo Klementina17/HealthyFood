@@ -1,0 +1,224 @@
+{% load static %}
+.container-fluid{
+    background-color: #e17488;
+}
+/*.pozadina{*/
+/*    background-image: url('../images/pngtree-simple-small-fresh-watercolor-company-profile-ppt-background-image_260406.jpg');*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 100%;*/
+/*}*/
+.bg-pink{
+    background-color: #FD4E6E !important;   
+}
+nav{
+    height: 12vh;
+}
+.sing_in{
+    height: 100vh;
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FD4E6E !important;
+} 
+.btn-pink{
+    background-color: #FCEBDA !important;
+    color: #E48989 !important;
+}
+.code{
+    float: left;
+    max-width: 50%;
+}
+#logo{
+    max-width: 25%;
+}
+.logo_link{
+    margin-top: 90px;
+    margin-left: 40px;
+}
+.healthy_food{
+    margin-left: 270px;
+    font-size: 37px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.nav-link
+{font-size: 27px;
+color: white !important;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.borrow{
+    background-color: #E0B78F;
+}
+.breakfast{
+    color: white;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none !important;
+}
+.lunch{
+    color: white;
+    padding-left: 90px;
+    padding-right: 127px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none !important;
+}
+.dinner{
+    color: white;
+    padding-left: 89px;
+    padding-right: 121px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none !important;
+}
+.dessert{
+    color: white;
+    padding-left: 90px;
+    padding-right: 106px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none !important;
+}
+.certificate{
+    color: rgb(225, 223, 223);
+    padding-left: 89px;
+    padding-right: 86px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none !important;
+}
+.btn-roze{
+    background-color: #EF0D37 !important;
+}
+.btn-zelen{
+    background-color: #5D7406 !important;
+}
+.btn-portokalov{
+    background-color: #E85300 !important;
+}
+.btn-dark-pink{
+    background-color: #BA1E3B !important;
+}
+footer{
+    background-color: #766868 !important;
+}
+.presmetka{
+    margin-left:-70px;
+}
+.slika{
+    max-width: 40%;
+    margin-left:70px;
+}
+.card-text{
+    font-size: 14px;
+}
+.btn-rozevko{
+    background-color: #FCEBDA !important;
+    color: black !important;
+}
+.karticki{
+    background-color: white !important;
+}
+.srcence{
+    margin-top: -34px;
+}
+.add{
+    margin-left: 380px;
+}
+.ime{
+    font-size: 22px;
+}
+.zacuvaj{
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+.kopce{
+    margin-left: 1100px;
+    margin-bottom: 50px;
+}
+.bg-light_borrow{
+    background-color: #f1c8a0 !important;
+}
+.sostojki{
+    margin-left: 200px;
+}
+.chia{
+    margin-left: 190px;
+}
+.karticka{
+    margin-left: 190px;
+}
+.bottom{
+    padding-bottom: 2px;
+}
+.back{
+    margin-left: 180px;
+    width: 80px;
+}
+.center{
+   margin-left: 700px;
+    width: 80px;
+}
+.bg-img{
+    background-image: url("/static/images/360_F_433383199_z1mLbi6GTKBmrtauE7sToBWPSfTdkUGa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.naslov{
+    margin-top: 250px;
+}
+.box{
+  background-color: #f1c8a0 !important;
+  position: relative;
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.radio-container{
+    margin-top: 40px;
+   display: flex;
+   justify-content: center;
+}
+.radio-containerr{
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+.minutes{
+    font-size: 18px;
+}
+.pomeri{
+    margin-top: 170px;
+}
+.boxx{
+    background-color: #f1c8a0 !important;
+    position: relative;
+    width: 800px;
+    height: 230px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.submmit{
+    margin-left: 240px;
+    width: 80px;
+}
+.congrats{
+    margin-left: 330px;
+}
+.ime{
+    font-size: 20px;
+}
+.potpis{
+    margin-left: 162px;
+}
+.linija{
+    margin-top: 38px;
+}

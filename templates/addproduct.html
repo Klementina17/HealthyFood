@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../../../static/css/style.css" />
+
+    <!-- Latest compiled and minified Bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-pink">
+      <div class="container d-dm-none position-relative">
+     <a href="./landingpage.html" class="position-absolute logo_link"><img src="/media//viber_image_2022-04-20_15-03-58-843.png" id="logo"></a>
+      <span class="healthy_food">HEALTHY FOOD</span>
+       <button
+       class="navbar-toggler"
+       type="button"
+       data-toggle="collapse"
+       data-target="#navbarSupportedContent"
+       aria-controls="navbarSupportedContent"
+       aria-expanded="false"
+       aria-label="Toggle navigation"
+     >
+       <span class="navbar-toggler-icon"></span>
+     </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto">
+           <li class="nav-item ">
+             <a class="nav-link active" href="./landingpage.html">HOME <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">PROFILE</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sing_in.html">SING OUT</a>
+            </li>
+         </ul>
+       </div>
+      </div>
+     </nav>
+      <div class="container-fluid borrow">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container d-dm-none position-relative">
+               <a href="./landingpage.html" class="position-absolute logo_link"></a>
+                <span class="healthy_food"></span>
+                 <button
+                 class="navbar-toggler"
+                 type="button"
+                 data-toggle="collapse"
+                 data-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent"
+                 aria-expanded="false"
+                 aria-label="Toggle navigation"
+               >
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav">
+                     <li class="nav-item ">
+                       <a class="nav-link active" href="./landingpage.html">MY FOOD <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">RECIPES</a>
+                     </li>
+                   </ul>
+                 </div>
+                </div>
+               </nav> 
+        </div>
+        <div class="row">
+            <div class="col-8"><h1 class="add">ADD NEW PRODUCT</h1></div>
+            <!-- <div class="row">
+                <div class="col-10"><h1 class="add">ADD NEW PRODUCT</h1></div>
+                <div class="col-2"><form>
+                    <div class="form-group mt-4 ml-5 float-right">
+                        <a href="./profil.html" type="submit" class="btn btn-pink btn-lg rounded-circle float-right">CANCEL</a>
+                    </div></div>
+            </div>
+             -->
+            <div class="col-5 offset-3">
+                <form>
+                      <div class="form-group row mt-4 mb-0">
+                        <label for="inputName" class="col-sm-2 col-form-label"><p class="ime">NAME</p></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName">
+                        </div>
+                      </div>
+                      <div class="form-group row mb-0">
+                        <label for="inputCalories" class="col-sm-2 col-form-label"><p class="ime">CALORIES</p></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputCalories">
+                        </div>
+                      </div>
+                      <div class="form-group row mb-0">
+                        <label for="inputCarbohydrates" class="col-sm-2 col-form-label"><p class="ime">TOTAL</p></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputCarbohydrates" placeholder="Total Carbohydrates">
+                        </div>
+                      </div>
+                      <div class="form-group row mb-0">
+                        <label for="inputProtein" class="col-sm-2 col-form-label"><p class="ime">PROTEIN</p></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputProtein">
+                        </div>
+                      </div>
+                      <div class="form-group row mb-0">
+                        <label for="inputFat" class="col-sm-2 col-form-label"><p class="ime">FAT</p></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputFat" placeholder="Total Fat">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputDescription" class="col-sm-2 col-form-label"><p class="ime">DESCRIPTION</p></label>
+                        <textarea class="form-control ml-3" rows="3" id="inputDescription"></textarea>
+                      </div>
+            
+                      </form>
+                    </div>
+                   
+            </div>
+            <div class="row mt-0">
+              <div class="col-6"><a href="#" type="button" class="btn btn-pink btn-lg rounded-pill mt-2 kopce">CANCEL</a></div>
+                <div class="col-6"><a href="#" type="submit" class="btn btn-pink btn-lg rounded-pill mt-2 zacuvaj">SAVE</a></div>
+            </div>
+        </div>
+        
+      </div>
+    <!-- Latest Font-Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+     <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+ <div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12 pomesti">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}">PROFILE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}">QUIZ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borrow">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h3 class="mt-4">BREAKFAST</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="mt-4">AVOCADO TOAST WITH EGGS</h1>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/fried-egg-on-toast-with-salted-herb-butter-and-radishes-BA-040617.webp' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+        <div class="col-5 mr-5">
+          <h3 class="my-3">WHY YOU WILL LOVE THIS AVOCADO BREAKFAST RECIPE?</h3>
+          <p>
+            Healthy and nutritious: with the right amount of healthy fats, protein, and fiber, this is the perfect healthy breakfast recipe to jumpstart your day.
+            Easy to make: This avocado toast with eggs is easy to make and needs only 15 minutes to put together.
+            Versatile and delicous: Avocado toast is one of the most fun breakfast meals to make. Get creative and add your favorite toppings.
+          </p>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 sostojki">
+          <h3 class="mt-3 text-capitalize">INGREDIENTS</h3>
+          <ul class="list-group ml-3">
+            <li>
+              <i class="fas fa-check-square"></i>
+              whole-grain bread or bread of choice
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              olive oil or oil of choice
+            </li>
+            <li>
+                <i class="fas fa-check-square"></i>
+                eggs
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                ripe avocados
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                salt and pepper
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+               lemon juice
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+               pickled red onions
+              </li>
+
+          </ul>
+        </div>
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/images (2).jfif' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="col text-center">
+          <h3 class="mb-4 mt-0">HOW TO MAKE AVOCADO TOAST AND EGGS?</h3>
+            
+            <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-check-square"></i>
+                  <b>Toast the bread:</b> Heat a large non-stick pan over medium-high heat. Lay the bread slices and toast them until crisp and golden brown on both sides. Set aside. 
+                    Alternatively, you can toast the bread in a toaster, or bake in the preheated oven at 375F for 4-6 minutes.
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>
+                  <b>Next, cook the eggs:</b> To the same preheated pan, heat the oil on medium-low heat. Crack in the eggs, cook them for about 6-8 minutes, or until the whites are fully set and the yolk is cooked to your favorite doneness. 
+                </li>
+                <li>
+                    <i class="fas fa-check-square"></i>
+                    <b>Prepare the avocado: </b>Meanwhile, to a shallow plate, mash the avocado with salt, pepper, and lemon juice. 
+                  </li>
+                  <li>
+                    <i class="fas fa-check-square"></i>
+                    <b>Assemble the toast: </b>To assemble the toast, spread a spoonful of mashed avocado over the toast.
+                  </li>
+                  <li>
+                    <i class="fas fa-check-square"></i>
+                    <b>Top the toast with eggs and serve: </b>Top with 1 fried egg and season with a pinch of salt and freshly ground pepper. Serve with pickled red onion and enjoy!
+                  </li>
+              </ul>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/Avocado-toast-with-eggs-7.jpg' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+        <div class="col-5 mr-5">
+          <h3 class="mt-5">RECIPE NOTES AND TIPS</h3>
+          <ul class="list-group mt-3">
+            <li>
+              <i class="fas fa-check-square"></i>
+              The serving size is one toast topped with one fried egg.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Use any bread of choice. We used whole-grain bread.
+            </li>
+            <li>
+                <i class="fas fa-check-square"></i>
+                Do not use hard and unripe avocados. Go for a ripe but firm avocado.
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                Any oil of choice will work.
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                Pickled onions are optional but make for a great addition. You may use capers instead.
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                Get creative with your toppings. Avocado toast pairs so well with many different toppinds like feta cheese, honey, strawberries, tomatoes, sauteed mushrooms, and so on.
+              </li>
+          </ul>
+        </div>
+      </div>
+   
+      <div class="row py-5">
+        <div class="col-12"><a href="{% url 'breakfastPage' %}" class="btn btn-rozevko back">BACK</a></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>

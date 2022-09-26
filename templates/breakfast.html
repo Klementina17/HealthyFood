@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+     <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12 pomesti">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}">PROFILE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}">QUIZ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+      <div class="container-fluid borrow">
+        <div class="row">
+            <div class="col-6"><h1 class="float-right mt-4">BREAKFAST</h1></div>
+            <div class="col-6 d-flex justify-content-center mt-2"><form>
+                <div class="form-group mt-4 ml-5">
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="SEARCH">
+                </div></div>
+        </div>
+        <div class="row ml-5">
+            <div class="col-3 offset-1">
+                <div class="card karticki" id="item1" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/fried-egg-on-toast-with-salted-herb-butter-and-radishes-BA-040617.webp'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">EGGS ON BREAD</h5>
+                  <p class="card-text"><b>Ingredients:</b> <br>
+                    4 slices whole-grain bread or bread of choice <br>
+                    1 tbsp olive oil <br>
+                    4 large eggs <br>
+                    2 small ripe avocados or 1 large<br>
+                    Kosher salt and black pepper to taste <br>
+                    2 seeded and peeled <br>
+                    4 large eggs <br>
+                    Pickled red onions</p>
+                    <a href="#" class="float-right srcence mr-4"><img src="{% static 'images/Vector.png' %}" alt=""></a>
+                  <a href="{% url 'eggsPage' %}" class="btn btn-rozevko float-right mt-2">OPEN</a>
+                </div>
+              </div></div>
+              <div class="col-3 offset-1 ml-0">
+                <div class="card karticki" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/best-breakfast-choices-and-diabetes-1087468-primary-recirc-603a39fe3b10439eaa9a0cf80a09eec2.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">OMELLETE WITH VEGETABLES</h5>
+                  <p class="card-text"><b>Ingredients:</b> <br>
+                    Eggs: Start with 3 large eggs. ...
+                    Milk: Here you can use milk, cream, or sour cream. ...
+                    Butter: You'll need 1 tablespoon of butter, divided. ...
+                    Mushrooms: First on the veggie list is ¼ cup of chopped mushrooms. ...
+                    White Onion: Next, finely chop 2 tablespoon of white onion.</p>
+                    <a href="#" class="float-right srcence mr-4"><img src="{% static 'images/Vector.png' %}" alt=""></a>
+                  <a href="{% url 'omlettePage' %}" class="btn btn-rozevko float-right">OPEN</a>
+                </div>
+              </div></div>
+              <div class="col-3 offset-1 ml-0">
+                <div class="card karticki" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/fried-egg-on-toast-with-salted-herb-butter-and-radishes-BA-040617.webp'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">EGGS ON BREAD</h5>
+                  <p class="card-text"><b>Ingredients:</b> <br>
+                    4 slices whole-grain bread or bread of choice <br>
+                    1 tbsp olive oil <br>
+                    4 large eggs <br>
+                    2 small ripe avocados or 1 large<br>
+                    Kosher salt and black pepper to taste <br>
+                    2 seeded and peeled <br>
+                    4 large eggs <br>
+                    Pickled red onions</p>
+                    <a href="#" class="float-right srcence mr-4"><img src="{% static 'images/Vector.png' %}" alt=""></a>
+                  <a href="{% url 'eggsPage' %}" class="btn btn-rozevko float-right mt-2">OPEN</a>
+                </div>
+              </div></div>
+              
+        </div>
+        <div class="row ml-5">
+          <div class="col-3 offset-1">
+            <div class="card karticki" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'images/best-breakfast-choices-and-diabetes-1087468-primary-recirc-603a39fe3b10439eaa9a0cf80a09eec2.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">OMELLETE WITH VEGETABLES</h5>
+              <p class="card-text"><b>Ingredients:</b> <br>
+                Eggs: Start with 3 large eggs. ...
+                Milk: Here you can use milk, cream, or sour cream. ...
+                Butter: You'll need 1 tablespoon of butter, divided. ...
+                Mushrooms: First on the veggie list is ¼ cup of chopped mushrooms. ...
+                White Onion: Next, finely chop 2 tablespoon of white onion.</p>
+                <a href="#" class="float-right srcence mr-4"><img src="{% static 'images/Vector.png' %}" alt=""></a>
+              <a href="{% url 'omlettePage' %}" class="btn btn-rozevko float-right">OPEN</a>
+            </div>
+          </div></div>
+            <div class="col-3 offset-1 ml-0">
+              <div class="card karticki" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'images/fried-egg-on-toast-with-salted-herb-butter-and-radishes-BA-040617.webp'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">EGGS ON BREAD</h5>
+                <p class="card-text"><b>Ingredients:</b> <br>
+                  4 slices whole-grain bread or bread of choice <br>
+                  1 tbsp olive oil <br>
+                  4 large eggs <br>
+                  2 small ripe avocados or 1 large<br>
+                  Kosher salt and black pepper to taste <br>
+                  2 seeded and peeled <br>
+                  4 large eggs <br>
+                  Pickled red onions</p>
+                  <a href="#" class="float-right srcence mr-4"><img src="{% static 'images/Vector.png' %}" alt=""></a>
+                <a href="{% url 'eggsPage' %}" class="btn btn-rozevko float-right mt-2">OPEN</a>
+              </div>
+            </div></div>
+            <div class="col-3 offset-1 ml-0">
+              <div class="card karticki" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'images/best-breakfast-choices-and-diabetes-1087468-primary-recirc-603a39fe3b10439eaa9a0cf80a09eec2.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">OMELLETE WITH VEGETABLES</h5>
+                <p class="card-text"><b>Ingredients:</b> <br>
+                  Eggs: Start with 3 large eggs. ...
+                  Milk: Here you can use milk, cream, or sour cream. ...
+                  Butter: You'll need 1 tablespoon of butter, divided. ...
+                  Mushrooms: First on the veggie list is ¼ cup of chopped mushrooms. ...
+                  White Onion: Next, finely chop 2 tablespoon of white onion.</p>
+                  <a href="#" class="float-right srcence mr-4"><img src="{% static 'images/Vector.png' %}" alt=""></a>
+                <a href="{% url 'omlettePage' %}" class="btn btn-rozevko float-right mb-0">OPEN</a>
+              </div>
+            </div></div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12"><a href="{% url 'landingpage' %}" class="btn btn-rozevko back">BACK</a></div>
+      </div>
+      </div>
+
+   <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>

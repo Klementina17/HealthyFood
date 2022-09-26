@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+ <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    <span class="linkovi">Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}"><span class="linkovi">PROFILE</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}"><span class="linkovi">ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}"><span class="linkovi">QUIZ</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borrow">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h3 class="mt-4">DINNER</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="mt-4">TOFU & MUSHROOM STIR-FRY</h1>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/images (1).jfif' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+        <div class="col-5 mr-5 d-flex align-items-center">
+          <p>
+            If you have a bit of extra time before making this stir-fry recipe,
+            press the whole block of tofu between two layers of paper towels,
+            weighted down with a couple of large cans, for 15 minutes. Removing
+            that excess water helps the tofu get extra crispy as it cooks.
+          </p>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 sostojki">
+          <h3 class="mt-3 text-capitalize">INGREDIENTS</h3>
+          <ul class="list-group ml-3">
+            <li>
+              <i class="fas fa-check-square"></i>
+              1 14-ounce block extra-firm tofu, drained
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              1 pound mixed mushrooms, such as maitake, shiitake, oyster,
+              button, and/or crimini
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              6 scallions
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              1 2-inch piece ginger
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              1½ teaspoons cornstarch
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              ½ teaspoon crushed red pepper flakes
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+
+              Kosher salt
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              3 tablespoons soy sauce, divided
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              2 tablespoons seasoned rice vinegar
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              2 tablespoons Shaoxing wine (Chinese rice wine) or mirin
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              2 tablespoons vegetable oil, divided, plus more
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Steamed white rice and sesame seeds (for serving)
+            </li>
+          </ul>
+        </div>
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/download (1).jfif' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-3">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 1</h5>
+              <p class="card-text">
+                Stir-fries are all about cooking quickly and over high heat, so
+                the key to success is prepping your ingredients beforehand so
+                you’re ready to go.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 2</h5>
+              <p class="card-text">
+                Cut 14-oz. block of tofu into 1x¼" pieces. Place pieces on a
+                paper-towel lined plate and press a paper towel over top of
+                pieces to absorb excess water.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 3</h5>
+              <p class="card-text">
+                Remove any dirt from 1 lb. mushrooms with a damp paper towel and
+                tear into 1" pieces. Trim root ends of 6 scallions, then slice
+                them crosswise into 1" pieces. Peel 2-inch piece ginger with a
+                spoon and thinly slice crosswise.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 4</h5>
+              <p class="card-text">
+                Toss tofu, 1½ tsp. cornstarch, ½ tsp. red pepper flakes, a pinch
+                of salt, and 1 Tbsp. soy sauce in a medium bowl. Stir 2 Tbsp.
+                vinegar, 2 Tbsp. wine, and remaining 2 Tbsp. soy sauce in a
+                small bowl.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 5</h5>
+              <p class="card-text">
+                Heat 1 Tbsp. oil in a large skillet, preferably nonstick, over
+                medium-high. When oil is shimmering and slides quickly across
+                surface of pan, add mushrooms, scallions, and ginger and cook,
+                tossing often, until mushrooms and scallions are browned in
+                spots and mushrooms are tender, 5–7 minutes. Season lightly with
+                salt and transfer to another medium bowl.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 6</h5>
+              <p class="card-text">
+                Heat 1 Tbsp. oil in same skillet over high. When oil is
+                shimmering again, add tofu mixture and arrange in a single layer
+                in skillet. Cook, undisturbed, until tofu is browned on first
+                side, about 2 minutes. Add a touch more oil if skillet is very
+                dry or tofu is sticking, then turn pieces and continue to cook,
+                undisturbed again, until second side is browned, about a minute
+                or two longer. If your skillet isn’t nonstick, you might need to
+                loosen the tofu by scraping skillet with a spatula. 
+                BUTTON
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 7</h5>
+              <p class="card-text">
+                PLAY/PAUSE
+                BUTTON Step 10 Add wine mixture and mushroom mixture back to
+                skillet. Cook, tossing briskly, until sauce is thickened and all
+                ingredients are coated, about 30 seconds. Remove from heat.
+                Taste and season with salt, if needed. PLAY/PAUSE BUTTON Step 11
+                Serve stir-fry over rice. Top with sesame seeds. PLAY/PAUSE
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-light_borrow">
+              <div class="card-body">
+                <h5 class="card-title">STEP 8</h5>
+                <p class="card-text">
+                    Add wine mixture and mushroom mixture back to skillet. Cook,
+                    tossing briskly, until sauce is thickened and all ingredients
+                    are coated, about 30 seconds. Remove from heat. Taste and season
+                    with salt, if needed.
+                    Serve stir-fry over rice. Top with sesame seeds.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12"><a href="{% url 'dinnerPage' %}" class="btn btn-rozevko back">BACK</a></div>
+      </div>
+   
+    </div>
+
+    <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>

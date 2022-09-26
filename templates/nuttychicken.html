@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+       <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+<div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    <span class="linkovi">Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}"><span class="linkovi">PROFILE</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}"><span class="linkovi">ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}"><span class="linkovi">QUIZ</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borrow">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h3 class="mt-4">LUNCH</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="mt-4">NUTTY CHICKEN SATAY STRIPS</h1>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/Nutty-chicken-satay-a8c094e.jpg' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+        <div class="col-5 mr-5 mt-5">
+            <h3 class="mt-3 text-capitalize">INGREDIENTS</h3>
+            <ul class="list-group ml-3">
+              <li>
+                <i class="fas fa-check-square"></i>
+                2 tbsp chunky peanut butter (without palm oil or sugar)
+              </li>
+              <li>
+                <i class="fas fa-check-square"></i>
+                1 garlic clove, finely grated
+              </li>
+              <li>
+                  <i class="fas fa-check-square"></i>
+                  1 tsp Madras curry powder
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>
+                  few shakes soy sauce
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>
+                  2 tsp lime juice
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>
+                  2 skinless, chicken breast fillets (about 300g) cut into thick strips
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>
+                  about 10cm cucumber, cut into fingers
+                </li>
+                <li>
+                    <i class="fas fa-check-square"></i>
+                    sweet chilli sauce, to serve
+                  </li>
+  
+            </ul>
+          </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-3">
+            <div class="card bg-light_borrow">
+                <div class="card-body">
+                  <h5 class="card-title">STEP 1</h5>
+                  <p class="card-text">Heat oven to 200C/180C fan/gas 4 and line a baking tray with non-stick paper.</p>
+                </div>
+              </div>
+          </div>
+        <div class="col-3">
+            <div class="card bg-light_borrow">
+                <div class="card-body">
+                  <h5 class="card-title">STEP 2</h5>
+                  <p class="card-text">Mix 2 tbsp chunky peanut butter with 1 finely grated garlic clove, 1 tsp Madras curry powder, a few shakes of soy sauce and 2 tsp lime juice in a bowl. Some nut butters are thicker than others, so if necessary, add a dash of boiling water to get a coating consistency.</p>
+                </div>
+              </div>
+          </div>
+        
+        <div class="col-3"><div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title">STEP 3</h5>
+              <p class="card-text">Add 2 skinless chicken breast fillets, cut into strips, and mix well. Arrange on the baking sheet, spaced apart, and bake in the oven for 8-10 mins until cooked, but still juicy.</p>
+            </div>
+          </div></div>
+          <div class="col-3">
+            <div class="card bg-light_borrow">
+                <div class="card-body">
+                  <h5 class="card-title">STEP 4</h5>
+                  <p class="card-text">Eat warm with roughly 10cm cucumber, cut into fingers, and sweet chilli sauce. Alternatively, leave to cool and keep in the fridge for up to 2 days.</p>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12"><a href="{% url 'lunchPage' %}" class="btn btn-rozevko back">BACK</a></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>

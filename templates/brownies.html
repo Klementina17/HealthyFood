@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Klementina Dimitrova" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+     <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+   <div class="container-fluid fixed-top bg-pink position-relative">
+      <div class="row">
+        <div class="col-12 pomesti">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'landingpage' %}" class="position-absolute logo_link">
+              <img
+                src="{% static 'images/viber_image_2022-04-20_15-03-58-843.png' %}"
+                id="logo"
+              />
+            </a>
+            <span class="healthy_food">HEALTHY FOOD</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'landingpage' %}">
+                    Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'profilpage' %}">PROFILE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutuspage' %}">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'quizpage' %}">QUIZ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borrow">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <h3 class="mt-4">DESSERTS</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <h1 class="mt-4">STRAWBERRY BROWNIES</h1>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/Chocolate-Covered-Strawerry-Brownies-5805.jpg' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+        <div class="col-5 mr-5">
+          <h3 class="my-3">Why you’ll love this strawberry brownies recipe?</h3>
+          <ul class="list-group ml-3">
+            <li>
+              <i class="fas fa-check-square"></i>
+              No flour needed. Like my flourless brownies, these have no grains
+              either!
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Accidentally gluten free. If you are celiac or follow a low gluten
+              diet, these are perfect for you.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Ready in under 25 minutes. These brownies take less time than
+              something out of a box.
+            </li>
+          </ul>
+          <p class="mt-2">
+            They have all the best parts of a classic brownie- Ooey, gooey in
+            the center, with those gorgeous crackly tops on the outside. They
+            also have a generous burst of fresh strawberries and chocolate chips
+            to take it up a notch.
+          </p>
+        </div>
+      </div>
+
+      <div class="row py-5">
+        <div class="col-5 sostojki">
+          <h3 class="text-center">INGREDIENTS</h3>
+          <ul class="list-group ml-3">
+            <li>
+              <i class="fas fa-check-square"></i>
+              Chocolate chips– I used semi sweet chocolate chips, but dark or
+              milk chocolate chips also work.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Coconut oil– Choose refined coconut oil so that there is no
+              coconut flavor.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Eggs– Room temperature eggs.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Sugar– White sugar is preferred, but raw or brown sugar work too.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Vanilla extract– Adds a subtle vanilla flavor.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Cocoa powder– Unsweetened and sifted.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Tapioca starch– Helps bind the brownies together and give them an
+              extra chew.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Salt– Just a pinch to balance out the sweet ingredients.
+            </li>
+            <li>
+              <i class="fas fa-check-square"></i>
+              Strawberries– Finely sliced.
+            </li>
+          </ul>
+        </div>
+        <div class="col-5 m-lg-auto">
+          <img
+            src="{% static 'images/images (4).jfif' %}"
+            alt=""
+            class="rounded-circle w-75 d-block m-auto"
+          />
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-4">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">STEP 1</h5>
+              <p class="card-text">
+                Start by melting the chocolate with the coconut oil until
+                smooth. Next, beat together the eggs, sugar, and vanilla
+                extract, then beat in the melted chocolate/coconut mixture. Fold
+                through the remaining ingredients and finally the strawberries.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 ml-0">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">STEP 2</h5>
+              <p class="card-text">
+                Now, transfer the batter into a lined pan and bake for 22-25
+                minutes, or until a skewer comes out mostly clean. Finally, let
+                the brownies cool in the pan completely before slicing and
+                serving.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card bg-light_borrow">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">TIPS FOR SUCCES</h5>
+              <p class="card-text">
+                Reserve half the strawberries to distribute on top of the
+                brownies before baking them. Be sure to sift the cocoa powder
+                and tapioca starch to ensure there are no clumps throughout. Do
+                not over-bake the brownies as they continue to cook as they are
+                cooling down.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col-12"><a href="{% url 'dessertsPage' %}" class="btn btn-rozevko back">BACK</a></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../../../static/css/style.css"></script>
+  </body>
+</html>
